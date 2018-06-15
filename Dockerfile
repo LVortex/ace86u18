@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive LANG=ru_RU.UTF-8 LANGUAGE=ru_RU:ru LC_ALL=ru_
 WORKDIR /tmp
 
 # set ports
-EXPOSE 8621 62062 6878 8000
+EXPOSE 8621 62062 6878 8000 8090
 
 RUN \
 apt-get update && apt-get upgrade -y && \
@@ -44,6 +44,12 @@ chmod 755 /opt/acestream/androidfs/system/bin/* /opt/acestream/androidfs/acestre
 # install aceproxy
 wget -o - https://github.com/pepsik-kiev/HTTPAceProxy/archive/master.zip -O aceproxy.zip && \
 unzip aceproxy.zip -d /opt/ && \
+
+# install TorrServer
+mkdir -p /opt/TorrServer/ && \
+wget https://github.com/YouROK/TorrServe/raw/master/TorrServer/dist/TorrServer-linux-amd64 && \
+mv TorrServer-linux-amd64 /opt/TorrServer/TorrServer-linux-amd64 && \
+chmod +x TorrServer-linux-amd64 /opt/TorrServer/TorrServer-linux-amd64 && \
 
 # set /tmp on tmpfs
 echo "tmpfs /tmp tmpfs rw,nosuid,nodev 0 0" | tee -a /etc/fstab && \
