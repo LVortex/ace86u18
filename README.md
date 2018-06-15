@@ -13,3 +13,7 @@ docker run \
 -e TZ=Europe/Berlin \
 sybdata/ace86u18 bash -c "./start.sh 600"
 ```
+ #### где:
+
+* 600 - Время очистки кеша acestream в секундах
+* TZ='timezone'
