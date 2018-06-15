@@ -49,7 +49,7 @@ unzip aceproxy.zip -d /opt/ && \
 mkdir -p /opt/TorrServer/ && \
 wget https://github.com/YouROK/TorrServe/raw/master/TorrServer/dist/TorrServer-linux-amd64 && \
 mv TorrServer-linux-amd64 /opt/TorrServer/ && \
-chmod +x TorrServer-linux-amd64 /opt/TorrServer/TorrServer-linux-amd64 && \
+chmod +x /opt/TorrServer/TorrServer-linux-amd64 && \
 
 # set /tmp on tmpfs
 echo "tmpfs /tmp tmpfs rw,nosuid,nodev 0 0" | tee -a /etc/fstab && \
