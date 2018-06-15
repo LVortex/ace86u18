@@ -37,6 +37,9 @@ mkdir -p /opt/acestream/
 wget -o - https://sybdata.de/files/public-docs/acestream_3.1.31_webUI_x86.tar.gz && \
 tar -zxvf acestream_3.1.31_webUI_x86.tar.gz && \
 mv androidfs /opt/acestream/androidfs && \
+find /opt/acestream/androidfs/system -type d -exec chmod 755 {} \; && \
+find /opt/acestream/androidfs/system -type f -exec chmod 644 {} \; && \
+chmod 755 /opt/acestream/androidfs/system/bin/* /opt/acestream/androidfs/acestream.engine/python/bin/python && \
 
 # install aceproxy
 wget -o - https://github.com/pepsik-kiev/HTTPAceProxy/archive/master.zip -O aceproxy.zip && \
