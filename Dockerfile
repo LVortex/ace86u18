@@ -48,7 +48,7 @@ unzip aceproxy.zip -d /opt/ && \
 # install TorrServer
 mkdir -p /opt/TorrServer/ && \
 wget https://github.com/YouROK/TorrServe/raw/master/TorrServer/dist/TorrServer-linux-amd64 && \
-mv TorrServer-linux-amd64 /opt/TorrServer/TorrServer-linux-amd64 && \
+mv TorrServer-linux-amd64 /opt/TorrServer/ && \
 chmod +x TorrServer-linux-amd64 /opt/TorrServer/TorrServer-linux-amd64 && \
 
 # set /tmp on tmpfs
