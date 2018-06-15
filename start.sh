@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/acestream.engine/acestream.start >/dev/null 2>&1 &
+/opt/acestream/acestream.start >/dev/null 2>&1 &
 
 /opt/HTTPAceProxy-master/acehttp.py >/dev/null 2>&1 &
 
