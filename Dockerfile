@@ -33,7 +33,7 @@ apt-get purge git python-dev gcc build-essential -y && \
 apt-get autoremove -y && \
 
 #acestream
-mkdir -p /opt/acestream/
+mkdir -p /opt/acestream/ && \
 wget -o - https://sybdata.de/files/public-docs/acestream_3.1.31_webUI_x86.tar.gz && \
 tar -zxvf acestream_3.1.31_webUI_x86.tar.gz && \
 mv androidfs /opt/acestream/androidfs && \
