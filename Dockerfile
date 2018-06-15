@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive LANG=ru_RU.UTF-8 LANGUAGE=ru_RU:ru LC_ALL=ru_
 WORKDIR /tmp
 
 # set ports
-EXPOSE 8621 62062 9944 6878 8000
+EXPOSE 8621 62062 6878 8000
 
 RUN \
 apt-get update && apt-get upgrade -y && \
