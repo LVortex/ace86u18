@@ -8,5 +8,5 @@
 
 while true; do
         sleep $1
-        rm -rf /tmp/state/.ACEStream/.acestream_cache/* /tmp/state/.ACEStream/collected_torrent_files/*
+        rm -rf /opt/acestream/androidfs/acestream.engine/.ACEStream/collected_torrent_files/*
 done
