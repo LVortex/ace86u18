@@ -19,7 +19,7 @@ wget \
 git \
 mc \
 nano \
-net-tools \
+iputils-ping \
 tzdata \
 locales \
 htop && \
