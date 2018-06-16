@@ -62,7 +62,7 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
 ADD start.sh /start.sh
 ADD acestream.start /opt/acestream/acestream.start
 ADD acestream.start /opt/acestream/acestream.stop
-ADD acestream.cong /opt/acestream/androidfs/acestream.engine/acestream.conf
+ADD acestream.conf /opt/acestream/androidfs/acestream.engine/acestream.conf
 RUN chmod +x /start.sh
 RUN chmod +x /opt/acestream/acestream.start
 RUN chmod +x /opt/acestream/acestream.stop
