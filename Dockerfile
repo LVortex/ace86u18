@@ -51,9 +51,6 @@ wget https://github.com/YouROK/TorrServe/raw/master/TorrServer/dist/TorrServer-l
 mv TorrServer-linux-amd64 /opt/TorrServer/ && \
 chmod +x /opt/TorrServer/TorrServer-linux-amd64 && \
 
-# set /tmp on tmpfs
-echo "tmpfs /tmp tmpfs rw,nosuid,nodev 0 0" | tee -a /etc/fstab && \
-
 # clean up
 apt-get clean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
