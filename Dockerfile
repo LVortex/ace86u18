@@ -21,6 +21,7 @@ mc \
 nano \
 iputils-ping \
 tzdata \
+ffmpeg \
 locales \
 htop && \
 # Set the locale
