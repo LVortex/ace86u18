@@ -8,7 +8,6 @@ EXPOSE 8621 62062 6878 8000 8090
 
 RUN \
 apt-get update && apt-get upgrade -y && \
-apt-get update -y && \
 apt-get install -y \
 build-essential \
 python-dev \
